@@ -1,0 +1,158 @@
+let courses = [
+    {
+        name: 'User Experience Design Essentials - Adobe XD UI UX Design',
+        tag: 'Best Seller',
+        instructor: 'Daniel Walter Scott',
+        duration: '12 hours',
+        lectures: 83,
+        cover: 'https://ibb.co/BT2Nsmt',
+        price: 313.99,
+    },
+    {
+        name: 'Python Bootcamp for Beginners',
+        tag: 'New',
+        instructor: 'Micheal Watson',
+        duration: '6 hours',
+        lectures: 40,
+        cover: 'https://ibb.co/2PZdkpB',
+        price: 193.99,
+    },
+    {
+        name: 'SQL Mastery (Zero to Hero)',
+        tag: 'Popular',
+        instructor: 'Neil Patel',
+        duration: '9 hours',
+        lectures: 98,
+        cover: 'https://ibb.co/BT2Nsmt',
+        price: 636.99,
+    },
+    {
+        name: 'React Mastery with 20 Projects',
+        tag: 'Best Seller',
+        instructor: 'Brad Travery',
+        duration: '10 hours',
+        lectures: 70,
+        cover: 'https://ibb.co/VpLPDJ6',
+        price: 169.99,
+    },
+    {
+        name: 'Build 5 Apps with Flutter',
+        tag: 'New',
+        instructor: 'John Smith',
+        duration: '5 hours',
+        lectures: 20,
+        cover: 'https://ibb.co/hCC6vsr',
+        price: 89.99,
+    },
+    {
+        name: 'Data Structure & Algorithm',
+        tag: 'New',
+        instructor: 'Mosh Hamedani',
+        duration: '8 hours',
+        lectures: 60,
+        cover: 'https://ibb.co/7kFXtnJ',
+        price: 129.99,
+    },
+    {
+        name: 'Advance Bootstrap (Flexbox, Grid, Animation Mastery)',
+        tag: 'Popular',
+        instructor: 'Magnus Carlsen',
+        duration: '3 hours',
+        lectures: 18,
+        cover: 'https://ibb.co/HCP4jZ8',
+        price: 169.99,
+    },
+    {
+        name: 'Angular Mastering from Scratch',
+        tag: null,
+        instructor: 'Mosh Hamedani',
+        duration: '10 hours',
+        lectures: 62,
+        cover: 'https://ibb.co/QNwsjQ7',
+        price: 250.99,
+    },
+    {
+        name: 'Back End Fundamentals with Django',
+        tag: 'New',
+        instructor: 'Walter Kingston',
+        duration: '4 hours',
+        lectures: 20,
+        cover: 'https://ibb.co/BT2Nsmt',
+        price: 69.99,
+    },
+    {
+        name: 'Fundamentals of Digital Marketing',
+        tag: 'Best Seller',
+        instructor: 'Khalid Farhan',
+        duration: '38 hours',
+        lectures: 112,
+        cover: 'https://ibb.co/Ws16cRH',
+        price: 367.99,
+    },
+    {
+        name: 'Ultimate Drawing Course',
+        tag: null,
+        instructor: 'Daniel Walter Scott',
+        duration: '3 hours',
+        lectures: 16,
+        cover: 'https://ibb.co/72Z91vR',
+        price: 20.99,
+    },
+    {
+        name: 'Web Developer Bootcamp 2020',
+        tag: 'Best Seller',
+        instructor: 'Angela',
+        duration: '7 hours',
+        lectures: 65,
+        cover: 'https://ibb.co/ZxNNxY8',
+        price: 159.99,
+    },
+    {
+        name: 'NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)',
+        tag: 'Best Seller',
+        instructor: 'Maximillan',
+        duration: '6 hours',
+        lectures: 44,
+        cover: 'https://ibb.co/5YtRnvC',
+        price: 198.99,
+    },
+    {
+        name: 'PHP for Beginners - Become a PHP Master - CMS Project',
+        tag: 'Popular',
+        instructor: 'Daniel Walter Scott',
+        duration: '6 hours',
+        lectures: 23,
+        cover: 'https://ibb.co/0JGN3Xw',
+        price: 56.99,
+    },
+    {
+        name: 'Build Websites with Wordpress',
+        tag: 'Best Seller',
+        instructor: 'Md. Salauddin',
+        duration: '12 hours',
+        lectures: 20,
+        cover: 'https://ibb.co/sq5X098',
+        price: 135.99,
+    },
+    {
+        name: 'Marketing Essentials - Grow Sales Faster',
+        tag: null,
+        instructor: 'Wesly So',
+        duration: '5 hours',
+        lectures: 30,
+        cover: 'https://ibb.co/syYyYP1',
+        price: 199.99,
+    },
+
+];
+
+const shuffle = a => {
+    for (let i = a.length; i; i--) {
+        let j = Math.floor(Math.random() * i);
+        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+    }
+}
+
+shuffle(courses);
+
+export default courses;
