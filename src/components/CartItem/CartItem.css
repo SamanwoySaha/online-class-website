@@ -1,0 +1,22 @@
+.cartItem {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: #e6fbfd;
+    box-shadow: 0 2px 8px rgb(226, 226, 226);
+    border-radius: 10px;
+}
+
+.thumbnail {
+    width: 48px;
+    height: 27px;
+}
+
+.price {
+    margin-left: auto;
+}
+
+.cartItem-title {
+    margin: 5px 10px;
+}

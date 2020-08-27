@@ -1,0 +1,28 @@
+.cart {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    width: 350px;
+    background-color: rgb(242, 247, 255);
+    border-radius: 10px;
+}
+
+.cart-title, .cart-total {
+    margin: 0 auto;
+}
+
+.cart-title {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.cart-quantity {
+    font-size: 14px !important;
+    position: relative;
+    top: -18px;
+    left: -11px;
+}
+
+.cart-total {
+    margin-top: 10px;
+}

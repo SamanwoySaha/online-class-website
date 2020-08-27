@@ -1,0 +1,38 @@
+.course {
+    width: 850px;
+    padding: 20px; 
+    margin: 20px 0;
+    background-color: #fdf7f4;
+    border-radius: 10px;
+    transition: all linear 0.4s;
+}
+
+.course:hover {
+    background-color: #ffeee4;
+    box-shadow: 0 2px 8px lightgrey;
+}
+
+.course-price {
+    margin: 0 30px 0 auto;
+    color: #004a94;
+}
+
+.course-coverImage {
+    width: 240px;
+    height: 135px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.course-duration {
+    margin-top: -15px;
+}
+
+.course-category {
+    margin: 14px 0 10px;
+    color: #2b2d42;
+}
+
+.enroll-btn {
+    background-color: #007FFF !important;
+}
