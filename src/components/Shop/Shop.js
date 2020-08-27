@@ -11,22 +11,21 @@ const Shop = () => {
     const handleAddCourse = (newCourse) => {
         const newCourseList = [...myCourses, newCourse];
         setMyCourses(newCourseList);
-        console.log(newCourseList);
     }
 
     return (
         <div className="shop d-flex">
             <div>
-            {
-                courseList.map( course => <Course 
-                    course = {course}  
-                    handleAddCourse={handleAddCourse}
-                    key={course.shortName}
+                {
+                    courseList.map(course => <Course
+                        course={course}
+                        handleAddCourse={handleAddCourse}
+                        key={course.shortName}
                     >
                     </Course>)
-            }
+                }
             </div>
-            <Cart myCourses = {myCourses}></Cart>
+            <Cart myCourses={myCourses}></Cart>
         </div>
     );
 };

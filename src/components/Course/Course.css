@@ -12,11 +12,6 @@
     box-shadow: 0 2px 8px lightgrey;
 }
 
-.course-price {
-    margin: 0 30px 0 auto;
-    color: #004a94;
-}
-
 .course-coverImage {
     width: 240px;
     height: 135px;
@@ -24,13 +19,18 @@
     margin-right: 20px;
 }
 
+.course-category {
+    margin: 14px 0 10px;
+    color: #2b2d42;
+}
+
 .course-duration {
     margin-top: -15px;
 }
 
-.course-category {
-    margin: 14px 0 10px;
-    color: #2b2d42;
+.course-price {
+    margin: 0 30px 0 auto;
+    color: #004a94;
 }
 
 .enroll-btn {

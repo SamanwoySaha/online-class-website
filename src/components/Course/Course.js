@@ -13,10 +13,12 @@ const Course = (props) => {
             <div className="course-info">
                 <h4 className="mr-3">{name}</h4>
                 <h6>{tagChecker(tag)}</h6>
-                <h6 className="course-category"><FontAwesomeIcon icon={faTag} /> {category}</h6>
+                <h6 className="course-category"><FontAwesomeIcon icon={faTag} />        {category}</h6>
                 <p>by {instructor}</p>
-                <p className="course-duration"><strong>{duration}</strong> Total Hours - <strong>{lectures}</strong> Lectures</p>
-                <button className="btn btn-primary enroll-btn" onClick={() => handleAddCourse(props.course)}><FontAwesomeIcon icon={faCartPlus} /> Enroll Now</button>
+                <p className="course-duration">
+                    <strong>{duration}</strong> Total Hours - <strong>{lectures}</strong> Lectures
+                </p>
+                <button className="btn btn-primary enroll-btn" onClick={() => handleAddCourse(props.course)}><FontAwesomeIcon icon={faCartPlus} />Enroll Now</button>
             </div>
             <h4 className="course-price"> ${price}</h4>
         </div>
@@ -24,18 +26,20 @@ const Course = (props) => {
 };
 
 function tagChecker(tag) {
-    if(tag === 'Best Seller'){
-        return <span class="badge badge-warning">Best Seller</span>
-    }
-    else if(tag === 'Popular'){
-        return <span class="badge badge-info">Popular</span>
-    }
-    else if(tag === 'New'){
-        return <span class="badge badge-primary">New</span>
-    }
-    else{
-        return;
-    }
+    const badgeType = tag === 'Best Seller' ? 'warning' 
+        : tag === 'Popular' ? 'info'
+        : tag === 'New' ? 'primary'
+        : null;
+
+    return badgeFixer(badgeType, tag);
+}
+
+function badgeFixer(badgeType, tag) {
+    const badgeClass = 'badge badge-';
+
+    return ( 
+        <span className={`${badgeClass}${badgeType}`}>{tag}</span>
+    );
 }
 
 export default Course;
